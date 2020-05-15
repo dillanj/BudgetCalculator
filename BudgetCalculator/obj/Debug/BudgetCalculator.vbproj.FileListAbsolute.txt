@@ -1,0 +1,17 @@
+U:\cs3500\Calculator\BudgetCalculator\BudgetCalculator\bin\Debug\BudgetCalculator.exe.config
+U:\cs3500\Calculator\BudgetCalculator\BudgetCalculator\bin\Debug\BudgetCalculator.exe
+U:\cs3500\Calculator\BudgetCalculator\BudgetCalculator\bin\Debug\BudgetCalculator.pdb
+U:\cs3500\Calculator\BudgetCalculator\BudgetCalculator\bin\Debug\BudgetCalculator.xml
+U:\cs3500\Calculator\BudgetCalculator\BudgetCalculator\obj\Debug\MainWindow.g.vb
+U:\cs3500\Calculator\BudgetCalculator\BudgetCalculator\obj\Debug\Application.g.vb
+U:\cs3500\Calculator\BudgetCalculator\BudgetCalculator\obj\Debug\BudgetCalculator_MarkupCompile.cache
+U:\cs3500\Calculator\BudgetCalculator\BudgetCalculator\obj\Debug\BudgetCalculator_MarkupCompile.lref
+U:\cs3500\Calculator\BudgetCalculator\BudgetCalculator\obj\Debug\MainWindow.baml
+U:\cs3500\Calculator\BudgetCalculator\BudgetCalculator\obj\Debug\BudgetCalculator.g.resources
+U:\cs3500\Calculator\BudgetCalculator\BudgetCalculator\obj\Debug\BudgetCalculator.Resources.resources
+U:\cs3500\Calculator\BudgetCalculator\BudgetCalculator\obj\Debug\BudgetCalculator.vbproj.GenerateResource.cache
+U:\cs3500\Calculator\BudgetCalculator\BudgetCalculator\obj\Debug\BudgetCalculator.exe
+U:\cs3500\Calculator\BudgetCalculator\BudgetCalculator\obj\Debug\BudgetCalculator.xml
+U:\cs3500\Calculator\BudgetCalculator\BudgetCalculator\obj\Debug\BudgetCalculator.pdb
+U:\cs3500\Calculator\BudgetCalculator\BudgetCalculator\obj\Debug\BudgetCalculator.vbprojAssemblyReference.cache
+U:\cs3500\Calculator\BudgetCalculator\BudgetCalculator\obj\Debug\BudgetCalculator.vbproj.CoreCompileInputs.cache

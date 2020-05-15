@@ -1,0 +1,106 @@
+﻿<Window x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BudgetCalculator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="960" Width="1080">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="1.25*" />
+            <RowDefinition Height="5*" />
+            <RowDefinition Height="1
+                           *" />
+        </Grid.RowDefinitions>
+        <Label Content="Budget Calculator" HorizontalAlignment="Left" Grid.Column="0" Grid.Row="0" VerticalAlignment="Top" Height="80" Width="347" FontSize="36" FontWeight="Bold"/>
+        <Label x:Name="hourly_label" Content="Hourly" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+        <TextBox x:Name="hourly_input_box" HorizontalAlignment="Left" Height="23" Margin="27,47,0,0" Grid.Row="1" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="103"/>
+        <Label Content="Dollars Per Hour" HorizontalAlignment="Left" Margin="10,70,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="salary_label" Content="Salary" HorizontalAlignment="Left" Margin="252,8,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+        <TextBox x:Name="salary_input_box" HorizontalAlignment="Left" Height="23" Margin="252,49,0,0" Grid.Row="1" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+        <Label Content="Annual" HorizontalAlignment="Left" Margin="252,72,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="expenses_label" Content="Monthly Expenses" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="3" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+        <TextBox x:Name="expense_textbox" HorizontalAlignment="Left" Height="23" Margin="10,71,0,0" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Expense" HorizontalAlignment="Left" Margin="11,94,0,0" Grid.Row="3" VerticalAlignment="Top" Width="61"/>
+        <TextBox x:Name="expense_amount_textbox" HorizontalAlignment="Left" Height="23" Margin="227,71,0,0" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Per Month" HorizontalAlignment="Left" Margin="227,94,0,0" Grid.Row="3" VerticalAlignment="Top" Width="120"/>
+        <ListBox x:Name="expense_list" HorizontalAlignment="Left" Height="213" Margin="10,204,0,0" Grid.Row="3" VerticalAlignment="Top" Width="133" >
+        </ListBox>
+        <Button x:Name="add_button" Content="Add" HorizontalAlignment="Left" Margin="10,151,0,0" Grid.Row="3" VerticalAlignment="Top" Width="96" Height="19" IsEnabled="False"/>
+        <Label x:Name="col_header_week" Content="Weekly" HorizontalAlignment="Left" Margin="10,57,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Grid.Column="1"/>
+        <Label x:Name="col_header_monthly" Content="Monthly" HorizontalAlignment="Left" Margin="10,57,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Grid.Column="2"/>
+        <Label x:Name="col_header_annual" Content="Annual" HorizontalAlignment="Left" Margin="10,57,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Grid.Column="3"/>
+        <Label Content="Taxes" HorizontalAlignment="Left" Margin="10,4,0,0" Grid.Row="2" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+        <TextBox x:Name="taxes_input_box" HorizontalAlignment="Left" Height="23" Margin="11,42,0,0" Grid.Row="2" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="28"/>
+        <Label Content="Percentage Paid" HorizontalAlignment="Left" Margin="11,65,0,0" Grid.Row="2" VerticalAlignment="Top"/>
+        <Separator Grid.ColumnSpan="4" HorizontalAlignment="Left" Height="100" Margin="229,70,0,0" Grid.Row="3" VerticalAlignment="Top" Width="828" RenderTransformOrigin="0.5,0.5">
+            <Separator.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90.099"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Separator.RenderTransform>
+        </Separator>
+        <Separator Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="100" Margin="15,71,0,0" Grid.Row="3" VerticalAlignment="Top" Width="828" RenderTransformOrigin="0.5,0.5">
+            <Separator.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90.099"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Separator.RenderTransform>
+        </Separator>
+        <Separator Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="100" Margin="13,70,-198,0" Grid.Row="3" VerticalAlignment="Top" Width="828" RenderTransformOrigin="0.5,0.5" Grid.Column="1">
+            <Separator.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90.099"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Separator.RenderTransform>
+        </Separator>
+        <Label x:Name="_1_1_label" Content="0" Grid.Column="1" HorizontalAlignment="Left" Margin="49,68,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120" Height="40" FontWeight="Bold" FontSize="16" Foreground="#FF068717"/>
+        <Label x:Name="_2_1_label" Content="0" Grid.Column="2" HorizontalAlignment="Left" Margin="48,68,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120" Height="40" FontWeight="Bold" FontSize="16" Foreground="#FF068717"/>
+        <Label x:Name="_3_1_label" Content="0" Grid.Column="3" HorizontalAlignment="Left" Margin="55,68,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120" Height="40" FontWeight="Bold" FontSize="16" Foreground="#FF068717"/>
+        <Label x:Name="_1_2_label" Content="0" Grid.Column="1" HorizontalAlignment="Left" Margin="49,34,0,0" Grid.Row="2" VerticalAlignment="Top" Width="120" Height="40" FontWeight="Bold" FontSize="16" Foreground="#FFEC0000"/>
+        <Label x:Name="_2_2_label" Content="0" Grid.Column="2" HorizontalAlignment="Left" Margin="48,34,0,0" Grid.Row="2" VerticalAlignment="Top" Width="120" Height="40" FontWeight="Bold" FontSize="16" Foreground="#FFEC0000"/>
+        <Label x:Name="_3_2_label" Content="0" Grid.Column="3" HorizontalAlignment="Left" Margin="55,34,0,0" Grid.Row="2" VerticalAlignment="Top" Width="120" Height="40" FontWeight="Bold" FontSize="16" Foreground="#FFEC0000"/>
+        <TextBox x:Name="hours_per_week_input" HorizontalAlignment="Left" Height="24" Margin="11,108,0,0" Grid.Row="1" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="28"/>
+        <Label Content="Hours Per Week" HorizontalAlignment="Left" Margin="10,132,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Saved" HorizontalAlignment="Left" Margin="160,26,0,0" Grid.Row="4" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="total_w_label" Content="Weekly" HorizontalAlignment="Left" Margin="71,26,0,0" Grid.Row="4" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Grid.Column="1"/>
+        <Label x:Name="total_m_label" Content="Monthly" HorizontalAlignment="Left" Margin="77,26,0,0" Grid.Row="4" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Grid.Column="2"/>
+        <Label x:Name="total_a_label" Content="Annually" HorizontalAlignment="Left" Margin="70,26,0,0" Grid.Row="4" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Grid.Column="3"/>
+        <CheckBox x:Name="salary_checkbox" Content="" HorizontalAlignment="Left" Margin="377,53,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Label Content="$" HorizontalAlignment="Left" Margin="10,47,0,0" Grid.Row="1" VerticalAlignment="Top" Height="21" FontSize="10"/>
+        <Label Content="$" HorizontalAlignment="Left" Margin="232,49,0,0" Grid.Row="1" VerticalAlignment="Top" Height="21" FontSize="10" RenderTransformOrigin="0.667,0.714"/>
+        <Button x:Name="calculate_button" Content="Calculate" HorizontalAlignment="Left" Margin="238,132,0,0" Grid.Row="1" VerticalAlignment="Top" Width="109" Height="26"/>
+        <Label Content="%" HorizontalAlignment="Left" Margin="34,39,0,0" Grid.Row="2" VerticalAlignment="Top"/>
+        <Button x:Name="load_expenses_button" Content="Load Expenses" HorizontalAlignment="Left" Margin="252,151,0,0" Grid.Row="3" VerticalAlignment="Top" Width="95" Height="19"/>
+        <Button x:Name="save_button" Content="Save Expenses" HorizontalAlignment="Left" Margin="252,175,0,0" Grid.Row="3" VerticalAlignment="Top" Width="95" Height="19" IsEnabled="False"/>
+        <Label Content="$" HorizontalAlignment="Left" Margin="212,71,0,0" Grid.Row="3" VerticalAlignment="Top" Height="21" FontSize="10" RenderTransformOrigin="0.667,0.714"/>
+        <ListBox x:Name="amount_list" HorizontalAlignment="Left" Height="213" Margin="143,204,0,0" Grid.Row="3" VerticalAlignment="Top" Width="51" IsEnabled="False"/>
+        <Label x:Name="expenses_weekly_label" Content="0" Grid.Column="1" HorizontalAlignment="Left" Margin="49,49,0,0" Grid.Row="3" VerticalAlignment="Top" Width="120" Height="40" FontWeight="Bold" FontSize="16" Foreground="#FFEC0000"/>
+        <Label x:Name="expenses_monthly_label" Content="0" Grid.Column="2" HorizontalAlignment="Left" Margin="48,49,0,0" Grid.Row="3" VerticalAlignment="Top" Width="120" Height="40" FontWeight="Bold" FontSize="16" Foreground="#FFEC0000"/>
+        <Label x:Name="expenses_annual_label" Content="0" Grid.Column="3" HorizontalAlignment="Left" Margin="55,49,0,0" Grid.Row="3" VerticalAlignment="Top" Width="120" Height="40" FontWeight="Bold" FontSize="16" Foreground="#FFEC0000"/>
+        <Button x:Name="delete_button" Content="Delete" HorizontalAlignment="Left" Margin="11,175,0,0" Grid.Row="3" VerticalAlignment="Top" Width="96" Height="19" IsEnabled="False"/>
+        <!--<Separator HorizontalAlignment="Left" Height="100" Margin="11,49,0,0" VerticalAlignment="Top" Width="1051" Grid.ColumnSpan="4" Grid.RowSpan="2"/>
+        <Separator HorizontalAlignment="Left" Height="100" Margin="11,87,0,0" VerticalAlignment="Top" Width="1051" Grid.ColumnSpan="4" Grid.RowSpan="2" Grid.Row="1"/>
+        <Separator HorizontalAlignment="Left" Height="100" Margin="11,90,0,0" VerticalAlignment="Top" Width="1051" Grid.ColumnSpan="4" Grid.RowSpan="2" Grid.Row="2"/> -->
+
+
+    </Grid>
+</Window>
